@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="User adding">
+            </a>
+            <a class="navbar-brand" href="#">Simple User adding</a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Users</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-md-3">
+                <form autocomplete="off">
+                    <div class="form-group">
+                        <label for="userName">Your name</label>
+                        <input type="text" name="userName" class="form-control" id="userName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Your Email</label>
+                        <input type="email" name="userEmail" class="form-control" id="userEmail" placeholder="Enter your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="userRole">Example select</label>
+                        <select class="form-control" name="userRole" id="userRole">
+                            <option value="guest">guest</option>
+                            <option value="user">user</option>
+                            <option value="admin">admin</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="addUser">Add new user</button>
+                </form>
+                <div class="alert alert-danger invisible" id="error-block" role="alert"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="users-list">
+                    <h4>Users list:</h4>
+                    <table id="users-list-block" class="col-md-12"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <span class="text-muted">Here you can easily add, edit and delete users</span>
+        </div>
+    </footer>
+
+    <script src="js/Person.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Admin.js"></script>
+    <script src="js/Guest.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+header .navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+.container-fluid {
+  margin-top: 3%;
+}
+.container-fluid form .form-group select {
+  width: 40%;
+}
+.container-fluid form .form-group.has-error {
+  color: red;
+}
+.container-fluid form .form-group.has-error input {
+  border-color: red;
+}
+.container-fluid form .form-group.has-error input:focus {
+  border-color: #ced4da;
+}
+.container-fluid form button {
+  width: 100%;
+  margin-top: 5%;
+}
+.container-fluid .alert-danger {
+  display: block;
+  margin-top: 5%;
+  text-align: center;
+}
+.container-fluid .users-list h4 {
+  margin-bottom: 20px;
+}
+.container-fluid .users-list #users-list-block {
+  width: 100%;
+  margin-bottom: 15%;
+}
+.container-fluid .users-list #users-list-block tr td {
+  width: 25%;
+  border: 1px solid #ced4da;
+  padding: 0;
+  text-align: center;
+}
+.container-fluid .users-list #users-list-block tr td input,
+.container-fluid .users-list #users-list-block tr td select {
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+}
+.container-fluid .users-list #users-list-block tr .userEmail {
+  width: 50%;
+}
+.container-fluid .users-list #users-list-block tr .userRole {
+  position: relative;
+}
+.container-fluid .users-list #users-list-block tr .userRole span {
+  position: absolute;
+  top: 8px;
+  right: -43px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.container-fluid .users-list #users-list-block tr .userRole span:hover {
+  color: red;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f8f9fa;
+}
+footer .container-fluid {
+  margin: 0;
+}
